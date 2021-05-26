@@ -19,10 +19,6 @@ var end = document.getElementById("end");
 var button = document.getElementById("btn");
 button.addEventListener("click", clickSave);
 
-// index.html의 정보 등록하기 버튼 이벤트 등록
-var eventBtn = document.getElementById("enterBtn");
-eventBtn.addEventListener("click", alert("클릭"));
-
 function clickSave() {
 	console.log("정보를 가져옵니다.");
 	userName = user.value;
@@ -33,21 +29,34 @@ function clickSave() {
 
 function enterUser() {
 	console.log("정보를 등록합니다.");
-	named.innerText = userName;
+	/*named.innerText = userName;
 	start.innerText = userStartDate;
-	end.innerText = userEndDate;
+	end.innerText = userEndDate;*/
+	saveUserImformation();
+	pageChange();
 }
 
-function openEnterValuePage() {
-	
+function pageChange() {
+	self.location ='main.html';
 }
 
+function saveUserImformation() {
+	saveUserName(userName);
+	saveUserDate1(userStartDate);
+	saveUserDate2(userEndDate);
+}
 
-/*
-var startDate;
-var group;
-var endDate;
-*/
+function saveUserName(userName) {
+	localStorage.setItem("currentUserName", userName);
+}
+
+function saveUserDate1(userStartDate) {
+	localStorage.setItem("currentUserDate1", userStartDate);
+}
+
+function saveUserDate2(userEndDate) {
+	localStorage.setItem("currentUserDate2", userEndDate);
+}
 
 
 
