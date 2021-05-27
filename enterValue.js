@@ -19,12 +19,17 @@ var end = document.getElementById("end");
 var button = document.getElementById("btn");
 button.addEventListener("click", clickSave);
 
-function clickSave() {
+function clickSave(event) {
 	console.log("정보를 가져옵니다.");
-	userName = user.value;
-	userStartDate = whenStart.value;
-	userEndDate = whenEnd.value;
-	enterUser();
+	if(user.value !== "" && whenStart.value !== "" && whenEnd.value !== "") {
+		userName = user.value;
+		userStartDate = whenStart.value;
+		userEndDate = whenEnd.value;
+		enterUser();
+	} else{
+		alert("정보를 모두 입력해주세요!");
+		return false;
+	}
 }
 
 function enterUser() {

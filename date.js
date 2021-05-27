@@ -6,3 +6,5 @@ var day = today.getDate();
 var yymmdd = date + "." + month + "." + day;
 
 document.getElementById("startDate").placeholder = yymmdd;
+
+
