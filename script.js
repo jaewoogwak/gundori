@@ -1,5 +1,2 @@
-var click = addEventListener("click", doClick);
-
-function doClick() {
-	
-}
+//var intro = document.getElementById("introduce");
+//var text = intro.innerText;
