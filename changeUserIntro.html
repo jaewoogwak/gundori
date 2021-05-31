@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 한 줄 소개 변경하기! </title>
+</head>
+
+<body>
+    <b style="font-size:25px;">한 줄 소개를 써주세요!</b> <br>
+    <form>
+        <input type="text" id="intro" style="font-size:20px;" placeholder="아직도 멀었다">
+    </form>
+    <input type="button" id="save" style="width:250px" value="저장">
+    <script src="chgeUserIntroSaveBtn.js"></script>
+    <script>
+        var saveBtn = document.getElementById("save");
+        saveBtn.addEventListener("click", pageChange);
+        // 입력한 한 줄 소개 가져오기 & 바꾸기
+        var text = document.getElementById("intro").value;
+
+        function saveIntro() {
+            userIntro.innerText = text;
+            pageChange();
+        }
+        function pageChange() {
+            self.location = "main.html";
+        }
+    </script>
+
+</body>
+
+
+</html>
