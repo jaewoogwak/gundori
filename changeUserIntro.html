@@ -17,18 +17,21 @@
     <script src="chgeUserIntroSaveBtn.js"></script>
     <script>
         var saveBtn = document.getElementById("save");
-        saveBtn.addEventListener("click", pageChange);
+        saveBtn.addEventListener("click", saveIntro);
         // 입력한 한 줄 소개 가져오기 & 바꾸기
-        var text = document.getElementById("intro").value;
-
+        var text = document.getElementById("intro");
         function saveIntro() {
-            userIntro.innerText = text;
-            pageChange();
+            localStorage.setItem("userIntro", text.value);
+            pageChange_main();
+            text_intro = localStorage.getItem("userIntro");
+            userIntro = document.getElementById("introduce");
+            userIntro.innerText = text_intro;
         }
-        function pageChange() {
+        function pageChange_main() {
             self.location = "main.html";
         }
     </script>
+
 
 </body>
 

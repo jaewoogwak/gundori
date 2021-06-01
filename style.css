@@ -1,8 +1,21 @@
 .title {
 	font-weight: bold;
 	font-size: 30px;
+	text-align: center;
+	width: 100%;
+	
 }
 
+#enterBtn {
+	text-align: center;
+	width: 100%;
+	position:relative;
+	top:100px;
+}
+
+#bt {
+	font-size: 30px;
+}
 .enter {
 	font-size: 100px;
 }

@@ -11,7 +11,7 @@ function localStorageInit() {
 
 function pageChange(adress) {
     if(adress == "init") {
-        self.location = "index.html";
+        self.location = "first.html";
     } else if(adress == "revise") {
         self.location = "enterMenu.html";
     }
