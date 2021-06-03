@@ -1,41 +1,51 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="style.css">
-		<title> 정보를 입력해주세요 </title>
-	</head>
-	<body>
-		<h1>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title> 정보를 입력해주세요 </title>
+</head>
+
+<body>
+	<div class="main2">
+		<h1 id="enterMenu">
 			정보를 입력해주세요
 		</h1>
 		<div>
-			<form>
-				이름 : <input type="text" class ="imf" id ="enterName" name = "name" placeholder ="홍길동">
-			</form>
-			<form>
-				입대일자 : <input type="text" class ="imf" id = "startDate" name = "startDate" placeholder="00">
-			</form>
-				
-			<div>	
-				<form class = "enterGroup">
-    				군별 : <label class="reg" for="class"></label>
-    				<select size="4" multiple>
-        			<option value="army" selected> 육군 </option>
-        			<option value="navy"> 해군</option>
-        			<option value="airforce"> 공군</option>
-        			<option value="marine">해병대</option>
-    				</select>
+			<div class = "contents">
+				<form>
+					이름 : <input type="text" class="imf" id="enterName" name="name" placeholder="홍길동">
 				</form>
 			</div>
-			
-			<div>
-				<form class = "enterEndDate">
-					전역일 : <input type ="text" class ="imf" id = "endDate"name = "endDate" placeholder="00">
+			<div class = "contents">
+				<form>
+					입대일자 : <input type="text" class="imf" id="startDate" name="startDate" placeholder="2021.01.01">
 				</form>
 			</div>
+			<!--<div>
+				<form class="enterGroup">
+					군별 : <label class="reg" for="class"></label>
+					<select size="4" multiple>
+						<option value="army" selected> 육군 </option>
+						<option value="navy"> 해군</option>
+						<option value="airforce"> 공군</option>
+						<option value="marine">해병대</option>
+					</select>
+				</form>
+			</div>-->
+			<div class = "contents">
+				<form class="enterEndDate">
+					전역일 : <input type="text" class="imf" id="endDate" name="endDate" placeholder="2023.01.01">
+				</form>
+			</div>
+			<div id = "saveBtn">
+				<input type="button" id="btn" value="저장" style = "width: 100%; height: 50px;">
+			</div>
 			
-			<input type = "button" id = "btn" value = "저장">
 		</div>
-		<script src = "enterValue.js"></script>
-			
-	</body>
+	</div>
+	<script src="enterValue.js"></script>
+
+</body>
+
 </html>

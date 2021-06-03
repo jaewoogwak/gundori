@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel = "stylesheet" href = "new.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나의 군생활</title>
 </head>
+
 <body>
-    <div>
-        이름 : <h1 id = "name"></h1>
+    <div class="main3">
+        <div id="profile">
+            <span id="picture">
+                사진
+            </span>
+            <span class ="imformation">
+                <div id ="nm">
+                    이름 : <b id="name" style="font-size:40px;"></b>
+                </div>
+                <div>
+                    입대일 : <b id="start" style="font-size: 20px;"></b>
+                </div>
+                <div>
+                    전역일 : <b id="end" style ="font-size: 20px;"></b>
+                </div>
+            </span>
+        </div>
+        <div id="journey">
+            나의 군생활 여정 : <h1 id="elapsed"></h1>
+        </div>
+        <div>
+            <input type="button" id="init" value="초기화">
+            <input type="button" id="revise" value="수정">
+        </div>
+        <div>
+            한 줄 소개 : <h1 id="introduce" style="display:inline;"> 안녕하세요 !</h1>
+            <input type="button" id="changeUserIntro" value="한 줄 소개 바꾸기">
+        </div>
+        <div class = "day">
+            <div>
+                전체 복무일 :
+            </div>
+            <div>
+                현재 복무일 :
+            </div>
+            <div>
+                남은 복무일 :
+            </div>
+        </div>
     </div>
-    <div>
-        입대일 : <h1 id = "start"></h1>
-    </div>
-    <div>
-        
-    </div>
-    <div>
-        전역일 : <h1 id = "end"></h1>
-    </div>
-        나의 군생활 여정 : <h1 id = "elapsed"></h1>
-    <div>
-        <input type = "button" id = "init" value = "초기화">
-        <input type = "button" id = "revise" value = "수정">
-    </div>
-    <div>
-        한 줄 소개 : <h1 id = "introduce" style ="display:inline;"> 안녕하세요 !</h1>
-        <input type = "button" id ="changeUserIntro" value= "한 줄 소개 바꾸기">
-    </div>
-    <script src = "date.js"></script>
-    <script src = "enterValue.js"></script>
-    <script src = "setUser.js"></script>
-    <script src = "buttons.js"></script>
-    <script src = "script.js"></script>
-    <script src = "time.js"></script>
-    <script src = "introduce.js"></script>
+
+    <script src="date.js"></script>
+    <script src="enterValue.js"></script>
+    <script src="setUser.js"></script>
+    <script src="buttons.js"></script>
+    <script src="script.js"></script>
+    <script src="time.js"></script>
+    <script src="introduce.js"></script>
     <!--<script src = "chgeUserIntroSaveBtn.js"></script>-->
-    
+
 </body>
+
 </html>
