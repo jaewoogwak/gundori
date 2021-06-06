@@ -11,11 +11,16 @@
 
 <body>
     <div class="main3">
-        <div id="profile">
-            <span id="picture">
+        <div>
+            <h1 style = "text-align: center;"> 전역일 계산기 </h1>
+        </div>
+
+        <div id="profile">  
+            <div id="picture">
                 사진
-            </span>
-            <span class ="imformation">
+            </div>
+            
+            <div class ="imformation">
                 <div id ="nm">
                     이름 : <b id="name" style="font-size:40px;"></b>
                 </div>
@@ -25,17 +30,18 @@
                 <div>
                     전역일 : <b id="end" style ="font-size: 20px;"></b>
                 </div>
-            </span>
+            </div>
         </div>
         <div id="journey">
-            나의 군생활 여정 : <h1 id="elapsed"></h1>
+            나의 군생활 여정 : <b id="elapsed"></b>
         </div>
-        <div>
-            <input type="button" id="init" value="초기화">
-            <input type="button" id="revise" value="수정">
+        <div id = "journey_btn">
+            <input type="button" id="init" value="초기화" style="width: 49%; height: 30px;">
+            <input type="button" id="revise" value="수정 " style="width: 49%; height: 30px">
         </div>
-        <div>
+        <div id = "intro">
             한 줄 소개 : <h1 id="introduce" style="display:inline;"> 안녕하세요 !</h1>
+            <br>
             <input type="button" id="changeUserIntro" value="한 줄 소개 바꾸기">
         </div>
         <div class = "day">

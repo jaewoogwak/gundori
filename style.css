@@ -10,6 +10,7 @@
 .main3 {
 	border: solid black;
 	background-color: #A1887F;
+	width: 100%;
 }
 .title {
 	font-weight: bold;
@@ -43,36 +44,66 @@
 
 #profile {
 	border:solid gray;
-	height: 600px;
+	width: 100%;
+	height: 25%;
+	padding-bottom:1%;
+	margin-top:5px;
+	margin-bottom: 70px;
 }
 
 #picture {
-	display:inline-block;
 	position: relative;
-	bottom: 190px;
+	bottom: 90px;
+	text-align: center;
+	display:inline-block;
 	border:solid gray;
-	width: 200px;
-	height: 300px;
-	margin-top: 300px;
-	margin-left:150px;
+	width: 25%;
+	height: 25%;
+	padding-bottom:15%;
+	margin-left: 300px;
+	margin-right: 400px;
 }
+
 
 .imformation {
 	text-align: center;
 	display:inline-block;
 	border:solid gray;
-	width: 500px;
-	height: 300px;
-	margin-left:200px;
-	
+	width: 25%;
+	height: 25%;
+	padding-bottom:15%;
 }
 
-#nm {
-	
+#journey {
+	border:solid gray;
+	font-size: 30px;
+	text-align: center;
+	padding-top:10px;
+	padding-bottom: 10px;
 }
 
+#journey_btn {
+	border:solid gray;
+	text-align: center;
+}
 
+#intro {
+	border: solid gray;
+	text-align: center;
+	padding-top:10px;
+}
 
+#changeUserIntro {
+	border: solid gray;
+	width: 100%;
+	height: 30px;
+}
+
+.day {
+	border: solid gray;
+	text-align: center;
+	font-size: 20px;
+}
 
 
 
